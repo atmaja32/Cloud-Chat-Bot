@@ -19,8 +19,8 @@ from requests_aws4auth import AWS4Auth
 
 region = 'us-east-1'
 service = 'es'
-credential = boto3.Session(aws_access_key_id="AKIAV7QZ727JS4L5MJY6",
-                          aws_secret_access_key="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", 
+credential = boto3.Session(aws_access_key_id="xxx",
+                          aws_secret_access_key="xxx", 
                           region_name="us-east-1").get_credentials()
 auth = AWS4Auth(credential.access_key, credential.secret_key, region, service)
 
@@ -66,7 +66,7 @@ def addItems(data, cuisine):
 
 
 cuisines = ['indian', 'italian', 'mexican', 'chinese', 'american']
-headers = {'Authorization': 'Bearer V3bJYCUd049CFfIyw8OPX7-RIy3HfxF3tlqgiIHsrOv6MmzW7xoi8M-YdgeUgiGqywPGCacFwSXy3MYeuCtkdB82pOaW_CCl3u21AVSf_R_qbiYUeXg7n0o07B8ZYnYx'}
+headers = {'Authorization': 'Bearer API_KEY'}
 DEFAULT_LOCATION = 'New York'
 for cuisine in cuisines:
     for i in range(0, 100, 50):
