@@ -13,15 +13,15 @@ def check_empty(input):
 		return input
 
 client = boto3.resource(service_name='dynamodb',
-                          aws_access_key_id="AKIA2XBRXQ7VMTUD2QNC",
-                          aws_secret_access_key="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",
+                          aws_access_key_id="xxx",
+                          aws_secret_access_key="xxx",
                           region_name="us-east-1",
                          )
 table = client.Table('yelp-restaurants')
 
 
-business_id = "NjsXxWfNJIkkkKoqfelr6g"
-API_KEY = 'V3bJYCUd049CFfIyw8OPX7-RIy3HfxF3tlqgiIHsrOv6MmzW7xoi8M-YdgeUgiGqywPGCacFwSXy3MYeuCtkdB82pOaW_CCl3u21AVSf_R_qbiYUeXg7n0o07B8ZYnYx' 
+business_id = "xxx"
+API_KEY = 'xxx' 
 ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 ENDPOINT_ID = 'https://api.yelp.com/v3/businesses/' # + {id}
 HEADERS = {'Authorization': 'bearer %s' % API_KEY}
